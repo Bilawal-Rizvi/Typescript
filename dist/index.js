@@ -4,5 +4,5 @@ function greet(name) {
     return `Hello, ${name}!`;
 }
 const userName = "Syeda";
-console.log(greet( userName));
+console.log(greet(userName));
 //# sourceMappingURL=index.js.map
