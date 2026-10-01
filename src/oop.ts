@@ -60,3 +60,27 @@ class Modernchai{
         }
     }
 }
+
+
+
+class ekChai  {
+ static shopName: string = "Chaiwala";
+ constructor(public flavour: string, public price: number){
+
+ }
+}
+
+
+class Heater{
+    heat(){
+
+    }
+}
+
+class CHaiMaker{
+    constructor(private heater: Heater){}
+       make(){
+        this.heater.heat();
+       
+    }
+}   
