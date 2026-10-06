@@ -60,3 +60,40 @@ interface B{
 interface C extends A,B{
     propC:boolean;
 }
+// Generics
+
+
+function wrapInArray<T>(value:T):T[]{
+    return [value]
+}
+
+wrapInArray("Hello");
+ 
+function pair<T,U>(t:T,u:U):[T,U]{
+    return [t,u]
+}
+
+
+interface Box<T>{
+    value:T;
+}
+
+
+
+const box:Box<string> = {
+    value:"Hello"
+}
+
+const box2:Box<number> = {  
+    value:42
+   }
+
+   interface Apipromise<T>{
+    name:string;
+    data:T;
+   }
+
+const res: Apipromise<{flavour:string}> = {
+    name:"Chai",
+    data:{flavour:"Masala"}
+}
